@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">-->
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
+
+
+    <libros id = "L0001">
+        <libro tipo_clase = "novela" numero_paginas_libro = "500">
+            <titulo>TituloNovela</titulo>
+            <capitulo numero_paginas_capitulo = "100">
+                <titulo_capitulo>Novela1</titulo_capitulo>
+                <contenido  xmlns:xlink ="https://institutotecnologico.edix.com/es/web/mp_0373-lenguajes-de-marcas-y-sistemas-de-gestion-2021-daw-3t-ord-de-informacion-2021-damdaw-3t-"/>
+                        
+    
+            </capitulo>
+            <indice>1</indice>
+            <sipnosis>Lorem Ipsum es simplemente el texto de
+                     relleno de las imprentas y archivos de texto
+            </sipnosis>
+         </libro>
+
+        <libro tipo_clase = "infantil" numero_paginas_libro = "500">
+            <titulo>TituloInfantil</titulo>
+            <capitulo numero_paginas_capitulo = "100">
+                <titulo_capitulo>Infatil1</titulo_capitulo>
+                <contenido  xmlns:xlink ="URL_infantil"/>
+            </capitulo>
+            <indice>2</indice>
+            <sipnosis>Lorem Ipsum es simplemente el texto
+                     de relleno de las imprentas y archivos de texto
+            </sipnosis>
+        </libro>
+
+        <libro tipo_clase = "didactico" numero_paginas_libro = "500">
+            <titulo>TituloDidactico</titulo>
+            <capitulo numero_paginas_capitulo = "100">
+                <titulo_capitulo>Didactico1</titulo_capitulo>
+                <contenido  xmlns:xlink ="URL_didactico"/>
+            </capitulo>
+            <indice>3</indice>
+            <sipnosis>Lorem Ipsum es simplemente el texto
+                     de relleno de las imprentas y archivos de texto
+            </sipnosis> 
+        </libro>
+    </libros>
+
+
+    <revistas id = "R0002">
+        <revista tipo_clase = "informatica" numero_paginas = "200">
+            <titulo>tituloinformatica</titulo>
+            <numero_revista>01</numero_revista>
+            <indice>1</indice>
+            <seccion numero_paginas = "200">
+                <contenido  xmlns:xlink ="URL_informatica"/>
+            </seccion>
+        </revista>
+
+        <revista tipo_clase = "corazon">
+            <titulo>titulocorazon</titulo>
+            <numero_revista>02</numero_revista>
+            <indice>2</indice>
+            <seccion numero_paginas = "200">
+                <contenido  xmlns:xlink ="URL_corazon"/>
+            </seccion>
+        </revista> 
+
+        <revista tipo_clase = "coches">
+         <titulo>titulocoches</titulo>
+            <numero_revista>03</numero_revista>
+            <indice>3</indice>
+            <seccion numero_paginas = "200">
+                <contenido  xmlns:xlink ="URL_biblioteca"/>
+            </seccion>
+        </revista>
+
+        <revista tipo_clase = "investigacion">
+         <titulo>tituloinvestigacion</titulo>
+            <numero_revista>04</numero_revista>
+            <indice>4</indice>
+            <seccion numero_paginas = "200">
+                <contenido  xmlns:xlink ="URL_biblioteca"/>
+            </seccion>
+        </revista>
+
+        <revista tipo_clase = "otras">
+        <titulo>titulootras</titulo>
+            <numero_revista>05</numero_revista>
+            <indice>5</indice>
+            <seccion numero_paginas = "200">
+                <contenido  xmlns:xlink ="URL_biblioteca"/>
+            </seccion>
+        </revista>
+
+    </revistas>
+
+
+    <periodicos id = "P0003">
+        <periodico tipo_clase = "nacionales" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>          
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+        <periodico tipo_clase = "opinion" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>           
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+        <periodico tipo_clase = "deporte" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>           
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+        <periodico tipo_clase = "internacionales" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>          
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+
+        <periodico tipo_clase = "internacionales" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>          
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+        <periodico tipo_clase = "opinion" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>          
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+        <periodico tipo_clase = "deporte" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>           
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+        <periodico tipo_clase = "internacionales" fecha_publicacion = "2021-05-11">
+            <seccion tipo_seccion = "economica">
+                <articulos autor = "xxx"></articulos>
+                <contenido  xmlns:xlink ="URL_biblioteca"/>          
+            </seccion>
+            <indice>1</indice>
+        </periodico>
+    </periodicos>
+</biblioteca>

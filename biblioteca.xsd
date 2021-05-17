@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="biblioteca">
+    <xs:complexType>
+        <xs:sequence>
+            <!--hijos de biblioteca--> 
+            <xs:element name="libros"> 
+                <xs:complexType>
+                    <xs:sequence>
+                        <!--hijos de libros--> 
+                        <xs:element name = "libro" minOccurs="1" maxOccurs="3">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <!--elementos de libro:
+                                    titulo, capitulo, indice y sipnosis-->
+                                    <xs:element name = "titulo" type ="xs:string"/>
+                                    <xs:element name ="capitulo">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name ="titulo_capitulo"/>
+                                                <xs:element name ="contenido"></xs:element>
+                                            </xs:sequence>
+                                            <!--atributo de capitulp-->
+                                            <xs:attribute name ="numero_paginas_capitulo" type="xs:integer"></xs:attribute>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name ="indice" type = "xs:short"/>
+                                    <xs:element name ="sipnosis" type = "xs:string"/>
+                                </xs:sequence>
+                                <!--atributos de libros-->
+                                <xs:attribute name= "tipo_clase" type= "xs:string" use="required"/>
+                                <xs:attribute name= "numero_paginas_libro" type= "xs:long" use="required"/> 
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <!--atributo de libros-->
+                    <xs:attribute name= "id" type="xs:string" use="required"/>  
+                </xs:complexType>
+            </xs:element>    
+            <xs:element name = "revistas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <!--hijos de revistas--> 
+                        <xs:element name = "revista" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <!--elementos de revista:
+                                    titulo, numero_revista, indice y seccion-->
+                                    <xs:element name = "titulo" type ="xs:string"/>
+                                    <xs:element name ="numero_revista"/>
+                                    <xs:element name ="indice" type="xs:short"/>
+                                    <xs:element name= "seccion">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name ="contenido">
+                                                </xs:element>
+                                            </xs:sequence>
+                                            <xs:attribute name= "numero_paginas"/>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <!--atributos de revistas-->
+                                <xs:attribute name ="numero_paginas" type="xs:long"/>
+                                <xs:attribute name ="tipo_clase" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <!--atributo de revistas-->
+                    <xs:attribute name= "id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name = "periodicos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <!--hijos de periodicos--> 
+                        <xs:element name = "periodico" minOccurs="1" maxOccurs="10">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <!--elementos de periodico
+                                    seccion, indice-->
+                                    <xs:element name ="seccion">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name ="articulos"/>
+                                                <xs:element name ="contenido"></xs:element>
+                                            </xs:sequence>
+                                            <xs:attribute name ="tipo_seccion" type="xs:string"></xs:attribute>
+                                            <xs:attribute name ="autor" type="xs:string"></xs:attribute>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name ="indice" type="xs:short"/>
+                                </xs:sequence>
+                                <!--atributos de periodico-->
+                                <xs:attribute name= "tipo_clase" type= "xs:string" use="required"/>
+                                <xs:attribute name= "fecha_publicacion" type= "xs:date" use="required"/> 
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <!--atributo de periodicos-->
+                    <xs:attribute name= "id" type="xs:string" use="required"/>  
+                </xs:complexType>
+
+
+
+            </xs:element>
+        </xs:sequence>                
+    </xs:complexType>               
+</xs:element>
+
+</xs:schema>

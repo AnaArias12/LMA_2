@@ -1,0 +1,46 @@
+<!--definicion de elementos y atributos libros-->
+
+<!ELEMENT biblioteca (libros, revistas, periodicos)>
+<!ELEMENT libros (libro+)>
+<!ATTLIST libros id CDATA #REQUIRED>
+<!ELEMENT libro (titulo, capitulo, indice, sipnosis)>
+<!ATTLIST libro tipo_clase CDATA #REQUIRED>
+<!ATTLIST libro numero_paginas_libro CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulo (titulo_capitulo, contenido)>
+<!ATTLIST capitulo numero_paginas_capitulo CDATA #REQUIRED>
+<!ELEMENT titulo_capitulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido xmlns:xlink CDATA #REQUIRED>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sipnosis (#PCDATA)>
+
+<!--definicion de elementos y atributos revistas-->
+
+<!ELEMENT revistas (revista+)>
+<!ATTLIST revistas id CDATA #REQUIRED>
+<!ELEMENT revista (titulo, numero_revista, indice, seccionr)>
+<!ATTLIST revista tipo_clase CDATA #REQUIRED>
+<!ATTLIST revista numero_paginas CDATA #REQUIRED>
+<!--<!ELEMENT titulo (#PCDATA)>-->
+<!ELEMENT numero_revista (#PCDATA)>
+<!--<!ELEMENT indice (#PCDATA)>-->
+<!ELEMENT seccionr (contenido)>
+<!ATTLIST seccionr numero_paginas CDATA #REQUIRED>
+<!--<!ELEMENT contenido (#PCDATA)>-->
+<!ATTLIST contenido xmlns:xlink CDATA #REQUIRED>
+
+<!--definicion de elementos y atributos periodicos-->  
+
+<!ELEMENT periodicos (periodico+)>
+<!ATTLIST periodicos id CDATA #REQUIRED>
+<!ELEMENT periodico (seccion, indice)>
+<!ATTLIST periodico tipo_clase CDATA  #REQUIRED>
+<!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
+<!--<!ELEMENT seccion (#PCDATA)>-->
+<!ELEMENT seccion (articulos, contenido)>
+<!ATTLIST seccion tipo_seccion CDATA #REQUIRED>
+<!ELEMENT articulos (#PCDATA)>
+<!ATTLIST articulos autor CDATA #REQUIRED>
+<!--<!ELEMENT contenido (#PCDATA)>-->
+<!ATTLIST contenido xmlns:xlink CDATA #REQUIRED>
