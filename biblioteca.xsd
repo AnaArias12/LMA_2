@@ -8,7 +8,7 @@
                 <xs:complexType>
                     <xs:sequence>
                         <!--hijos de libros--> 
-                        <xs:element name = "libro" minOccurs="1" maxOccurs="3">
+                        <xs:element name = "libro" minOccurs="0" maxOccurs="3">
                             <xs:complexType>
                                 <xs:sequence>
                                     <!--elementos de libro:
@@ -41,7 +41,7 @@
                 <xs:complexType>
                     <xs:sequence>
                         <!--hijos de revistas--> 
-                        <xs:element name = "revista" minOccurs="1" maxOccurs="unbounded">
+                        <xs:element name = "revista" minOccurs="0" maxOccurs="unbounded">
                             <xs:complexType>
                                 <xs:sequence>
                                     <!--elementos de revista:
@@ -73,7 +73,7 @@
                 <xs:complexType>
                     <xs:sequence>
                         <!--hijos de periodicos--> 
-                        <xs:element name = "periodico" minOccurs="1" maxOccurs="10">
+                        <xs:element name = "periodico" minOccurs="0" maxOccurs="10">
                             <xs:complexType>
                                 <xs:sequence>
                                     <!--elementos de periodico
